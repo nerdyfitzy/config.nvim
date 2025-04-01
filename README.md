@@ -1,14 +1,15 @@
-# kickstart.nvim
+# Kaylee's NVIM Config
 
-## Introduction
+This config was built off of [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) but has had numerous changes to both the file structure and plugins added. Some of the changes are as follows:
+ - Completely different file structure, moving away from a singular massive init.lua file
+ - Harpoon for file navigation
+ - Auto HTML tag closing
+ - Undotree to keep track of undos
+ - Tuned LSP config for TS/React development
+ - Fugitive for integrated Git management
+ - Many different keybinds that I enjoy all found in `/lua/fitzy/remaps.lua`
 
-A starting point for Neovim that is:
-
-* Small
-* Single-file
-* Completely Documented
-
-**NOT** a Neovim distribution, but instead a starting point for your configuration.
+I've kept the installation process from the kickstart.nvim repo below in case you want to try it out.
 
 ## Installation
 
