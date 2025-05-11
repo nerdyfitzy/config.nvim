@@ -176,12 +176,20 @@ return {
       --
       -- But for many setups, the LSP (`ts_ls`) will work just fine
       html = {},
-      htmx = {},
-      vuels = {},
-      ts_ls = {},
+      ts_ls = {
+        init_options = {
+          plugins = {
+            name = '@vue/typescript-plugin',
+            location = '/usr/local/lib/node_modules/@vue/language-server',
+            languages = { 'vue' },
+          },
+        },
+        filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+      },
       clangd = {},
       tailwindcss = {},
       eslint = {},
+      volar = {},
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
