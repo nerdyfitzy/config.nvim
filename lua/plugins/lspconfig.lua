@@ -176,6 +176,7 @@ return {
       --
       -- But for many setups, the LSP (`ts_ls`) will work just fine
       html = {},
+      angularls = {},
       ts_ls = {
         -- init_options = {
         --   plugins = {
